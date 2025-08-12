@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-roboto-mono);
+}
+
+/* Custom AgriTrust theme colors */
+:root {
+  --agri-primary: #16a34a;
+  --agri-secondary: #0ea5e9;
+  --agri-accent: #f59e0b;
+  --agri-success: #22c55e;
+  --agri-warning: #eab308;
+  --agri-error: #ef4444;
+}
+
+.agri-gradient {
+  background: linear-gradient(135deg, var(--agri-primary) 0%, var(--agri-secondary) 100%);
+}
+
+.agri-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-lg rounded-xl;
+}
